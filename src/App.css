@@ -1,0 +1,252 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Querry */
+
+body {
+  background-image: url("../artur-aldyrkhanov-u159a2eL6UE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#loader {
+  width: 80px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.main {
+  background: transparent;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0px 0px 4px 5px white;
+  backdrop-filter: blur(15px);
+  width: 35%;
+  margin: auto;
+  margin-top: 7vh;
+  padding: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-radius: 10px;
+}
+
+.childDiv {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.inp {
+  background-color: #6b798ba9;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 360px;
+  border: 2px solid whitesmoke;
+  padding-left: 12px;
+
+}
+
+.searchbtn {
+  background-color: #6b798ba9;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius:50%;
+  width: 10%;
+  margin-left: 15px;
+  border:1px solid white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+#searchbtn:hover {
+  box-shadow: 0px 0px 1px 1px white,
+              0px 0px 2px 4px white;
+}
+
+
+
+.inp::placeholder {
+  color: white;
+}
+
+#cityname {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+#weather {
+  font-size: large;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+#weatherImg {
+  width: 200px;
+  height: 200px;
+}
+
+#temp {
+  padding-top: 10px;
+  font-size: 55px;
+}
+
+.windDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.windDiv h2 {
+  background-color: #202b3b;
+  color: #a4aab4;
+  padding: 6px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-family: monospace;
+  font-weight: bold;
+  width: 130px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.history{
+margin-top:15px;
+align-items: center;
+}
+
+#humidity {
+  font-size: x-large;
+  color: white;
+  padding-left: 40px;
+  position: relative;
+  top: 7px;
+}
+
+#windHead {
+  padding-right: 80px;
+}
+
+#Wind {
+  font-size: x-large;
+  color: white;
+  padding-left: 13px;
+  position: relative;
+  top: 7px;
+}
+
+#km {
+  padding-left: 7px;
+}
+
+@media screen and (max-width : 840px) {
+  .main {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width : 570px) {
+  .main {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  #loader {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width : 450px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width : 340px) {
+  .main {
+    width: 93%;
+  }
+
+  #searchbtn {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .windDiv {
+    display: inline-block;
+  }
+
+  .windDiv h2 {
+    width: 100%;
+    padding-right: 110px;
+  }
+
+  #humidity {
+    position: relative;
+    left: 30px;
+  }
+
+  #Wind {
+    position: relative;
+    left: 30px;
+  }
+
+}
+
+@media screen and (max-width : 250px) {
+  .childDiv {
+    display: inline-block;
+  }
+
+  #searchbtn {
+    position: relative;
+    left: 25%;
+    top: 10px;
+    width: 70px;
+    margin-bottom: 10px;
+  }
+
+  .windDiv h2 {
+    width: 90%;
+  }
+}
