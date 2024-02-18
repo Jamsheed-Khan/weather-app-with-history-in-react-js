@@ -99,7 +99,7 @@ function App() {
         <h1 id='cityname'>{cityName}</h1>
         <h2 id='weather'>{weather}</h2>
         <img id='weatherImg' src={weatherpng} alt="" />
-        <h2 id='temp'>{Temp}°</h2><br />
+        <h2 id='temp'>{Temp}°C</h2><br />
         <div className='windDiv'>
   
         </div>
